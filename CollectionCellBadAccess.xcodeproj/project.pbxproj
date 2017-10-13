@@ -15,6 +15,10 @@
 		6E7294761F911DED009CEC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7294741F911DED009CEC57 /* LaunchScreen.storyboard */; };
 		6E7294811F911DED009CEC57 /* CollectionCellBadAccessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7294801F911DED009CEC57 /* CollectionCellBadAccessTests.m */; };
 		6E72948C1F911DED009CEC57 /* CollectionCellBadAccessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72948B1F911DED009CEC57 /* CollectionCellBadAccessUITests.m */; };
+		6E72949B1F911FC8009CEC57 /* ProgressCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72949A1F911FC8009CEC57 /* ProgressCollectionViewCell.m */; };
+		6E72949E1F912026009CEC57 /* ProgressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72949D1F912026009CEC57 /* ProgressObject.m */; };
+		6E7294A11F912477009CEC57 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7294A01F912477009CEC57 /* CollectionViewController.m */; };
+		6E7294A31F913336009CEC57 /* ProgressCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7294A21F913336009CEC57 /* ProgressCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		6E7294871F911DED009CEC57 /* CollectionCellBadAccessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionCellBadAccessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E72948B1F911DED009CEC57 /* CollectionCellBadAccessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionCellBadAccessUITests.m; sourceTree = "<group>"; };
 		6E72948D1F911DED009CEC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7294991F911FC8009CEC57 /* ProgressCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCollectionViewCell.h; sourceTree = "<group>"; };
+		6E72949A1F911FC8009CEC57 /* ProgressCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCollectionViewCell.m; sourceTree = "<group>"; };
+		6E72949C1F912026009CEC57 /* ProgressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressObject.h; sourceTree = "<group>"; };
+		6E72949D1F912026009CEC57 /* ProgressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressObject.m; sourceTree = "<group>"; };
+		6E72949F1F912477009CEC57 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		6E7294A01F912477009CEC57 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		6E7294A21F913336009CEC57 /* ProgressCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +114,8 @@
 			children = (
 				6E7294691F911DED009CEC57 /* AppDelegate.h */,
 				6E72946A1F911DED009CEC57 /* AppDelegate.m */,
+				6E72949F1F912477009CEC57 /* CollectionViewController.h */,
+				6E7294A01F912477009CEC57 /* CollectionViewController.m */,
 				6E72946C1F911DED009CEC57 /* ViewController.h */,
 				6E72946D1F911DED009CEC57 /* ViewController.m */,
 				6E72946F1F911DED009CEC57 /* Main.storyboard */,
@@ -110,6 +123,11 @@
 				6E7294741F911DED009CEC57 /* LaunchScreen.storyboard */,
 				6E7294771F911DED009CEC57 /* Info.plist */,
 				6E7294661F911DED009CEC57 /* Supporting Files */,
+				6E7294991F911FC8009CEC57 /* ProgressCollectionViewCell.h */,
+				6E72949A1F911FC8009CEC57 /* ProgressCollectionViewCell.m */,
+				6E7294A21F913336009CEC57 /* ProgressCollectionViewCell.xib */,
+				6E72949C1F912026009CEC57 /* ProgressObject.h */,
+				6E72949D1F912026009CEC57 /* ProgressObject.m */,
 			);
 			path = CollectionCellBadAccess;
 			sourceTree = "<group>";
@@ -252,6 +270,7 @@
 				6E7294761F911DED009CEC57 /* LaunchScreen.storyboard in Resources */,
 				6E7294731F911DED009CEC57 /* Assets.xcassets in Resources */,
 				6E7294711F911DED009CEC57 /* Main.storyboard in Resources */,
+				6E7294A31F913336009CEC57 /* ProgressCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +297,10 @@
 			files = (
 				6E72946E1F911DED009CEC57 /* ViewController.m in Sources */,
 				6E72946B1F911DED009CEC57 /* AppDelegate.m in Sources */,
+				6E7294A11F912477009CEC57 /* CollectionViewController.m in Sources */,
+				6E72949E1F912026009CEC57 /* ProgressObject.m in Sources */,
 				6E7294681F911DED009CEC57 /* main.m in Sources */,
+				6E72949B1F911FC8009CEC57 /* ProgressCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

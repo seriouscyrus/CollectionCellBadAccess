@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="progressCell" id="MVk-En-qbX" customClass="ProgressCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-az-TrW">
+                    <rect key="frame" x="0.0" y="110" width="375" height="2"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3l-iR-lWu">
+                    <rect key="frame" x="153.5" y="81" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iUZ-az-TrW" firstAttribute="leading" secondItem="MVk-En-qbX" secondAttribute="leading" id="DAb-Fv-H2d"/>
+                <constraint firstItem="iUZ-az-TrW" firstAttribute="centerY" secondItem="MVk-En-qbX" secondAttribute="centerY" id="EwO-CD-yBV"/>
+                <constraint firstItem="b3l-iR-lWu" firstAttribute="centerX" secondItem="MVk-En-qbX" secondAttribute="centerX" id="gPp-a5-kwE"/>
+                <constraint firstItem="iUZ-az-TrW" firstAttribute="top" secondItem="b3l-iR-lWu" secondAttribute="bottom" constant="8" id="ltW-IZ-RUe"/>
+                <constraint firstAttribute="trailing" secondItem="iUZ-az-TrW" secondAttribute="trailing" id="wRK-Bn-Uxa"/>
+            </constraints>
+            <connections>
+                <outlet property="progressView" destination="iUZ-az-TrW" id="3Go-oi-fEt"/>
+            </connections>
+            <point key="canvasLocation" x="41.5" y="14.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

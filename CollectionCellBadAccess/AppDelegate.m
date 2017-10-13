@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic)   NSArray <ProgressObject *> *progressObjects;
+
 @end
 
 @implementation AppDelegate
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSUInteger count = 5;
+    NSMutableArray *objects = [NSMutableArray arrayWithCapacity:count];
+    for (NSUInteger i = 0; i < count; i++) {
+        objects[i] = [[ProgressObject alloc] init];
+    }
+    NSLog(@"Objects = %@", objects);
+    self.progressObjects = objects;
     return YES;
 }
 
